@@ -8,6 +8,7 @@ import {
 } from '../actions';
 
 const initialState = {
+  isAdding: false,
   isUpdating: false,
   error: null
 }
@@ -30,6 +31,24 @@ export const formReducer = (state = initialState, action) => {
       return {
         ...state,
         isAdding: false,
+        error: action.payload
+      }
+    case UPDATE_FRIEND_START:
+      return {
+        ...state,
+        isUpdating: true,
+        error: null
+      }
+    case UPDATE_FRIEND_SUCCESS:
+      return {
+        ...state,
+        isUpdating: true,
+        error: null
+      }
+    case UPDATE_FRIEND_FAILURE:
+      return {
+        ...state,
+        isUpdating: false,
         error: action.payload
       }
     default:
