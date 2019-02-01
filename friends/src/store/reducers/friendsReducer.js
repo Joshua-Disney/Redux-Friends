@@ -13,7 +13,7 @@ const initialState = {
   error: null
 }
 
-export const friends = (state = initialState, action) => {
+export const friendsReducer = (state = initialState, action) => {
   switch(action.type) {
     case FETCHING_FRIENDS:
       return {
@@ -33,6 +33,12 @@ export const friends = (state = initialState, action) => {
         ...state,
         isLoading: false,
         error: action.payload
+      }
+      case DELETE_FRIEND_START:
+        return {
+          ...state,
+          isLoading: true,
+          error: null
       }
     case DELETE_FRIEND_SUCCESS:
       return {

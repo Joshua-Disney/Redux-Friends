@@ -24,9 +24,10 @@ class FriendsListView extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => {
+  return ({
   friends: state.friendsReducer.friends
-})
+})}
 
 export default connect(
   mapStateToProps,
