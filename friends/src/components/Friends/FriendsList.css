@@ -1,0 +1,23 @@
+.friendCard {
+  font-size: 2rem;
+  font-weight: bold;
+  color: lightblue;
+  padding: 1rem 0;
+}
+
+.addButton {
+  width: 15rem;
+  height: 25px;
+  font-size: 1.7rem;
+  border-radius: 5%;
+}
+
+.friendName {
+  margin: 10px 0;
+}
+
+.smallPTag {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  color: lightcoral;
+}

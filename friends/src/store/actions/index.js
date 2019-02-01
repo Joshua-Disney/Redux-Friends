@@ -8,3 +8,14 @@ export {
   getFriends,
   deleteFriend
 } from './friendsActions';
+
+export {
+  ADD_FRIEND_START,
+  ADD_FRIEND_SUCCESS,
+  ADD_FRIEND_FAILURE,
+  UPDATE_FRIEND_START,
+  UPDATE_FRIEND_SUCCESS,
+  UPDATE_FRIEND_FAILURE,
+  addFriend,
+  updateFriend
+} from './formsActions';

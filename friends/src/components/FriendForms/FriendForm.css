@@ -1,0 +1,36 @@
+.FriendFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formHeader {
+  font-size: 5rem;
+  color: lightgreen;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInput {
+  margin: 20px 0;
+  width: 40rem;
+  height: 50px;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.formButton {
+  margin: 20px 0;
+  width: 30rem;
+  height: 40px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 7%;
+  border-color: lightblue;
+}

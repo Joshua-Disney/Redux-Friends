@@ -58,6 +58,7 @@ class FormView extends React.Component {
         handleChanges={this.handleChanges}
         friend={this.state.friend}
         isUpdating={this.state.isUpdating}
+        isAdding={this.props.isAdding}
       />
     )
   }

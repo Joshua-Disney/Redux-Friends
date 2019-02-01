@@ -15,18 +15,24 @@ class FriendsListView extends React.Component {
 
   render() {
     return (
-      <FriendsList
-        history={this.props.history}
-        getFriendById={this.props.getFriendById}
-        friends={this.props.friends}
-      />
+      <div>
+        <FriendsList
+          isAdding={this.props.isAdding}
+          isLoading={this.props.isLoading}
+          history={this.props.history}
+          getFriendById={this.props.getFriendById}
+          friends={this.props.friends}
+          toggleAdding={this.props.toggleAdding}
+        />
+      </div>
     )
   }
 }
 
 const mapStateToProps = state => {
   return ({
-  friends: state.friendsReducer.friends
+    isLoading: state.friendsReducer.isLoading,
+    friends: state.friendsReducer.friends
 })}
 
 export default connect(
